@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function NavItem({
   svglink,
   heading,
@@ -16,9 +18,12 @@ export function NavItem({
 export function ForCompaniesInstitues() {
   return (
     <>
-      <button className="flex border-2 border-[#2f426f] px-2 py-1 rounded-full">
+      <Link
+        className="flex border-2 border-[#2f426f] px-2 py-1 rounded-full"
+        to="/employer"
+      >
         For Companies/Institutes
-      </button>
+      </Link>
     </>
   );
 }

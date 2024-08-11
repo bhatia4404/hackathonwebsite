@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.collapsed_overview {
+  height: 50px;
+}
+.collapsed_guideline {
+  height: 130px;
+}

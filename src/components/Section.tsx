@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 export function ExpandableSectionElement({
   heading,
   content,
@@ -14,7 +13,10 @@ export function ExpandableSectionElement({
     !expanded ? collapsedClass : ""
   }`;
   return (
-    <div className="bg-white mx-5 mt-5 rounded-xl px-5 py-3">
+    <div
+      className="bg-white rounded-xl px-5 py-3"
+      id={`${heading.toLowerCase()}`}
+    >
       <h2 className="text-lg font-bold text-[#00009C]">{heading}</h2>
       <div className={classname}>
         {content}

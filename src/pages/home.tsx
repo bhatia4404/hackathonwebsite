@@ -9,9 +9,11 @@ import { MediaHandles } from "../components/SocialMedia";
 import { Header } from "../components/HomeHeader";
 import { Link } from "react-router-dom";
 import listIcon from "../img/list.svg";
-import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { visibleBarAtom } from "../atoms/bottomBar";
 export function Home() {
-  const [bottomSideBarVisible, setBottomSideBarVisible] = useState(false);
+  const [bottomSideBarVisible, setBottomSideBarVisible] =
+    useRecoilState(visibleBarAtom);
   return (
     <div className="">
       <div className="bg-[#F5F5F5]">

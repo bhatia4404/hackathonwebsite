@@ -51,39 +51,41 @@ export function HomepageNavBar() {
           </div>
         </div>
       </div>
-      <div
-        className={`flex flex-col py-10 bg-white h-[100%] lg:hidden ${
-          showMenu ? "" : "hidden"
-        }`}
-      >
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/images/coaching.svg"
-          heading="Saarthi"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/icons/open-innovation-icon.svg"
-          heading="Open Innovation"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/icons/blogs-icon.svg"
-          heading="Blogs"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/icons/drills-icon.svg"
-          heading="Hackathon"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/icons/jobs-icon.svg"
-          heading="Jobs"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/images/cooperation.svg"
-          heading="Contact Us"
-        />
-        <NavItemHorizontal
-          svglink="https://dfxy74dfhcx53.cloudfront.net/images/namaste.svg"
-          heading="About Us"
-        />
+      <div className="">
+        <div
+          className={`flex flex-col py-10 bg-white h-[100%] lg:hidden ${
+            showMenu ? "" : "hidden"
+          }`}
+        >
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/images/coaching.svg"
+            heading="Saarthi"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/icons/open-innovation-icon.svg"
+            heading="Open Innovation"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/icons/blogs-icon.svg"
+            heading="Blogs"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/icons/drills-icon.svg"
+            heading="Hackathon"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/icons/jobs-icon.svg"
+            heading="Jobs"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/images/cooperation.svg"
+            heading="Contact Us"
+          />
+          <NavItemHorizontal
+            svglink="https://dfxy74dfhcx53.cloudfront.net/images/namaste.svg"
+            heading="About Us"
+          />
+        </div>
       </div>
     </div>
   );

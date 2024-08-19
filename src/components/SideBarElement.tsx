@@ -1,3 +1,6 @@
+import { useSetRecoilState } from "recoil";
+import { visibleBarAtom } from "../atoms/bottomBar";
+
 export function SideBarElement({ text, svg }: { text: string; svg: any }) {
   return (
     <button
@@ -21,6 +24,7 @@ export function HorizontalSideBarElement({
   text: string;
   svg: any;
 }) {
+  const setVisibleBottomBar = useSetRecoilState(visibleBarAtom);
   return (
     <button
       className="flex gap-4 items-center hover:bg-blue-100 px-2 transition-all duration-300 rounded-md"
@@ -28,6 +32,7 @@ export function HorizontalSideBarElement({
         document.getElementById(text.toLowerCase())?.scrollIntoView({
           behavior: "smooth",
         });
+        setVisibleBottomBar((visibleBarAtom) => !visibleBarAtom);
       }}
     >
       <img src={svg} className="h-[30px]" />

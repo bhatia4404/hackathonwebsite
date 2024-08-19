@@ -11,7 +11,7 @@ function Theme({ theme }: { theme: string }) {
 }
 function Themes({ themes }: { themes: string[] }) {
   return (
-    <div className="grid grid-cols-7 w-[60%]">
+    <div className="grid grid-cols-7 w-[60%] max-xl:w-[100%]">
       {themes.map((theme, i) => (
         <Theme theme={theme} key={i + 1} />
       ))}
@@ -28,14 +28,18 @@ function HeaderTab({
   text: string;
 }) {
   return (
-    <div className="bg-white px-5 py-4 rounded-2xl">
+    <div className="bg-white px-5 py-4 rounded-2xl max-lg:px-2 max-lg:py-2 h-[70px]">
       <div className="flex gap-4">
-        <div className="bg-[#ccfdff] px-1 py-1 rounded-full">
-          <img src={icon} className="h-[30px]" />
+        <div className="bg-[#ccfdff]  lg:px-1 lg:py-1 rounded-full">
+          <img src={icon} className="w-[30px]" />
         </div>
         <div className="">
-          <h2 className="font-bold text-[#00B9E8] text-[14px]">{heading}</h2>
-          <p className="text-[12px] font-semibold">{text}</p>
+          <h2 className="font-bold text-[#00B9E8] text-[12px] max-lg:text-[10px]">
+            {heading}
+          </h2>
+          <p className="text-[12px] max-lg:text-[10px] font-semibold whitespace-nowrap">
+            {text}
+          </p>
         </div>
       </div>
     </div>
@@ -44,7 +48,7 @@ function HeaderTab({
 
 export function Header() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-8">
       <div className="flex gap-3 items-center">
         <div className="">
           <img src={gdsc} className="w-[60px]" alt="" />
@@ -74,7 +78,7 @@ export function Header() {
           "theme7",
         ]}
       />
-      <div className="flex justify-between">
+      <div className="grid grid-cols-5 max-xxl:grid-cols-4 gap-5 justify-between max-xxl:bg-white rounded-xl max-lg:py-3 max-lg:px-3">
         <HeaderTab icon={registerIcon} heading={"2000"} text="Registered" />
         <HeaderTab icon={eyeIcon} heading={"30000"} text="Impressions" />
         <HeaderTab icon={teamIcon} heading={"1-4"} text="Team size" />

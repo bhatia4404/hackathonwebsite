@@ -34,29 +34,34 @@ export function About() {
             we are proud to host this hackathon and support our students in
             developing innovative solutions to real-world challenges.
           </p>
-          <div className="recent_events  flex flex-col gap-5">
-            <h1 className=" text-xl font-bold text-[#00009C]">Recent Events</h1>
-            <div className="recent_event_details flex gap-6">
-              <img
-                src={presidentImg}
-                alt="President at J.C Bose university of Science and Technology, YMCA"
-                title="President at J.C Bose university of Science and Technology, YMCA"
-                className="w-[300px] h-[200px] rounded-xl"
-              />
-              <p className="font-semibold text-sm flex flex-col justify-center">
-                Hon'ble President Droupadi Murmu at our university for
-                Convocation'24
-                <br />
-                It was a momentous occasion for our university when the esteemed
-                President of India graced our convocation ceremony with her
-                presence. Her inspiring address, filled with words of wisdom and
-                encouragement, left a lasting impression on the graduating
-                class. The students were thrilled to receive their degrees from
-                such a distinguished figure, and the event was a testament to
-                our university’s commitment to academic excellence and national
-                service.
-              </p>
-            </div>
+        </div>
+      </div>
+      <div className="recent_events  flex flex-col gap-5">
+        <h1 className=" text-2xl font-bold text-[#00009C]">Recent Events</h1>
+        <div className="recent_event_details flex gap-6">
+          <img
+            src={presidentImg}
+            alt="President at J.C Bose university of Science and Technology, YMCA"
+            title="President at J.C Bose university of Science and Technology, YMCA"
+            className="w-[300px] h-[200px] rounded-xl"
+          />
+          <div className="flex flex-col gap-3">
+            <h1 className="text-xl font-bold text-[#00009C]">
+              Hon'ble President's Visit
+            </h1>
+            <p className="font-semibold text-sm flex flex-col justify-center">
+              Hon'ble President Droupadi Murmu at our university for
+              Convocation'24
+              <br />
+              It was a momentous occasion for our university when the esteemed
+              President of India graced our convocation ceremony with her
+              presence. Her inspiring address, filled with words of wisdom and
+              encouragement, left a lasting impression on the graduating class.
+              The students were thrilled to receive their degrees from such a
+              distinguished figure, and the event was a testament to our
+              university’s commitment to academic excellence and national
+              service.
+            </p>
           </div>
         </div>
       </div>

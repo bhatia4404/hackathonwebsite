@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import listIcon from "../img/list.svg";
 import { useRecoilState } from "recoil";
 import { visibleBarAtom } from "../atoms/bottomBar";
+import { About } from "../components/about";
 export function Home() {
   const [bottomSideBarVisible, setBottomSideBarVisible] =
     useRecoilState(visibleBarAtom);
@@ -219,6 +220,7 @@ export function Home() {
             </div>
           </div>
         </div>
+        <About />
       </div>
       <div className="bottom-sidebar bg-white fixed bottom-0 w-[100%] lg:hidden flex flex-col justify-center px-6 shadow-2xl rounded-t-3xl py-2">
         <button
